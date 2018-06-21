@@ -1,4 +1,25 @@
-function calculate4() {
+function calculateThree() {
+  var x = document.getElementById("gradForm");
+  var gp = 0;
+  var tgp = 230;
+
+  gp = (parseInt(x.elements[0].value) + parseInt(x.elements[1].value)) * 4;
+   gp = gp + (parseInt(x.elements[2].value) + parseInt(x.elements[3].value)) * 5;
+   gp = gp + (parseInt(x.elements[4].value)) * 4;
+   gp = gp + (parseInt(x.elements[5].value) * 1);
+
+  var spi = (gp / tgp) * 10;
+
+  //display result
+  if (spi) {
+    document.getElementById("marks").innerHTML = spi;
+  } else {
+    document.getElementById("marks").innerHTML = "invalidInput :(";
+  }
+
+}
+
+function calculateFour() {
   var x = document.getElementById("gradeForm");
   var gp = 0;
   var tgp = 240;
