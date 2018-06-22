@@ -4,9 +4,9 @@ function calculateThree() {
   var tgp = 230;
 
   gp = (parseInt(x.elements[0].value) + parseInt(x.elements[1].value)) * 4;
-   gp = gp + (parseInt(x.elements[2].value) + parseInt(x.elements[3].value)) * 5;
-   gp = gp + (parseInt(x.elements[4].value)) * 4;
-   gp = gp + (parseInt(x.elements[5].value) * 1);
+  gp = gp + (parseInt(x.elements[2].value) + parseInt(x.elements[3].value)) * 5;
+  gp = gp + (parseInt(x.elements[4].value)) * 4;
+  gp = gp + (parseInt(x.elements[5].value));
 
   var spi = (gp / tgp) * 10;
 
