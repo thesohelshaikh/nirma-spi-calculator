@@ -1,2 +1,3 @@
 # nirma-spi-calculator
-Testing
+
+A simple calculator for SPI based on the courses offered by Nirma Univerity.
