@@ -31,8 +31,9 @@ function calculateFour() {
 
 
   var spi = (gp / tgp) * 10;
+  spi = spi.toFixed(2);
 
-  //display result
+  // display result
   if (spi) {
     document.getElementById("marks").innerHTML = spi;
   } else {
@@ -55,6 +56,7 @@ function calculateFive() {
 
 
   var spi = (gp / tgp) * 10;
+  spi = spi.toFixed(2); // FIXME: This is not very efficient method
 
   // display result
   if (spi) {
