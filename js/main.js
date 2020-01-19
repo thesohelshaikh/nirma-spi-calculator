@@ -92,6 +92,29 @@ function calculateSix() {
 
 }
 
+function calculateSeven() {
+  var x = document.getElementById("gradeForm");
+  var gp = 0;
+  var tgp = 220; // total grade points that can be achieved
+
+  // gp achieved * credits
+  gp = gp + ((parseInt(x.elements[0].value) + parseInt(x.elements[1].value) + parseInt(x.elements[2].value) + parseInt(x.elements[3].value)) * 4);
+  gp = gp + (parseInt(x.elements[4].value) * 3);
+  gp = gp + (parseInt(x.elements[5].value) * 2);
+  gp = gp + (parseInt(x.elements[6].value));
+
+  var spi = (gp / tgp) * 10;
+  spi = spi.toFixed(2); // rounds of decimal to 2 places
+
+  // display result
+  if (spi) {
+    document.getElementById("marks").innerHTML = spi;
+  } else {
+    document.getElementById("marks").innerHTML = "invalidInput :(";
+  }
+
+}
+
 function refresh() {
   window.location.reload(false);
 }
